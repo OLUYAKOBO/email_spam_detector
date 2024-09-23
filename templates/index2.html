@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Detector</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link  rel="icon" href="{{url_for('static', filename='images/download.jpeg')}}" />
+
+    <style>
+        /* Add background color */
+        body {
+            background-color: #e9e9f0; /* Light gray background */
+            /* background-image: url("{{ url_for('static', filename='images/loans.jpg') }}"); */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Styling the form */
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Adds shadow for better design */
+        }
+
+        h2 {
+            color: #333;
+            font-weight: bold;
+            text-shadow: 1px 1px 5px #888; /* Subtle text shadow */
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #121213; /* Darker blue on hover */
+        }
+
+        /* Styling the textarea */
+        textarea {
+            width: 100%; /* Full width of the form-group container */
+            height: 200px; /* Height of the textarea */
+            padding: 15px; /* Padding inside the textarea */
+            border: 1px solid #ccc; /* Border color */
+            border-radius: 5px; /* Rounded corners */
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Inner shadow */
+            font-size: 16px; /* Font size */
+            resize: none; /* Disable resizing */
+        }
+
+        /* Optional: Add hover and focus effects */
+        textarea:hover {
+            border-color: #007bff; /* Change border color on hover */
+        }
+
+        textarea:focus {
+            outline: none; /* Remove default outline */
+            border-color: #007bff; /* Change border color on focus */
+            box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Add shadow on focus */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Email Spam Detection</h2>
+        <form action="/predict" method="post" class="mt-4 form-container">
+            <div class="form-group">
+                <textarea name="text" id="text" placeholder="Paste your email here"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Get Prediction</button>
+        </form>
+        
+        {{ prediction_text }}
+
+    </div>
+</body>
+</html>
