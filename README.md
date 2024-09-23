@@ -60,9 +60,9 @@ The project is organized into key directories and files, including the main appl
 * Developing the web application to handle user input.
 * Integrating the trained model into the application for real-time predictions.
 * Ensuring a responsive user interface for an optimal user experience.
-* Here is the link to the application: 
+* Here is the link to the application: https://spam-detector-vjxy.onrender.com/
 
-**How to Use**https://spam-detector-vjxy.onrender.com/
+**How to Use**
 
 Users can open the application in their web browser, paste the email content into the provided text area, and click the prediction button to determine whether the email is classified as spam or not.
 
