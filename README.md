@@ -1,12 +1,12 @@
-**Email Spam Detection Application**
+# **Email Spam Detection Application**
 
-**Overview**
+## Overview
 
 The Email Spam Detection Application is a machine learning-based application designed to classify emails as Spam or not Spam.
 Utilizing the scikit-learn library, this app helps users efficiently filter unwanted emails, enhancing their email management experience.
 
 
-**Table of contents**
+## **Table of contents**
 
 * Features
 * Technologies used.
@@ -16,14 +16,14 @@ Utilizing the scikit-learn library, this app helps users efficiently filter unwa
 * Future improvements.
 * Licenses.
 
-**Features**
+## **Features**
 
 * User-friendly interface to paste or upload email content.
 * Real-time spam classification.
 * Clear feedback on the classification result.
 * Built with responsiveness for various screen sizes.
 
-**Technologies Used**
+## **Technologies Used**
 
 * Python: Programming language for backend development.
 * Flask/FastAPI: Web framework for building the application.
@@ -31,12 +31,12 @@ Utilizing the scikit-learn library, this app helps users efficiently filter unwa
 * HTML/CSS/JavaScript: Frontend technologies for user interface.
 * Bootstrap: CSS framework for responsive design.
 
-**Project Structure**
+## **Project Structure**
 
 The project is organized into key directories and files, including the main application file, required dependencies, static files and templates for styling, HTML templates, and the trained model files.
 
 
-**Processes Involved**
+### **Processes Involved**
 
 1. **Data Collection**: Collected 3 different datasets from kaggle.com containing labeled emails (spam and non-spam).
 
@@ -60,13 +60,13 @@ The project is organized into key directories and files, including the main appl
 * Developing the web application to handle user input.
 * Integrating the trained model into the application for real-time predictions.
 * Ensuring a responsive user interface for an optimal user experience.
-* Here is the link to the application: https://spam-detector-vjxy.onrender.com/
+*  Click [Here](https://spam-detector-vjxy.onrender.com/) to try app 🚀!
 
-**How to Use**
+## **How to Use**
 
 Users can open the application in their web browser, paste the email content into the provided text area, and click the prediction button to determine whether the email is classified as spam or not.
 
-**Future Improvements**
+## **Future Improvements**
 
 * Implementing advanced NLP techniques such as BERT or transformers for better classification accuracy.
 * Allowing users to train the model on their own datasets for customized spam detection.
