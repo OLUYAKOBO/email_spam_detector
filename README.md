@@ -5,7 +5,7 @@
 The Email Spam Detection Application is a machine learning-based application designed to classify emails as Spam or not Spam.
 Utilizing the scikit-learn library, this app helps users efficiently filter unwanted emails, enhancing their email management experience.
 
-![Web Page Overview](https://github.com/OLUYAKOBO/email_spam_detector/tree/main/static/images/Capture.JPG)
+![Web Page Overview](https://github.com/OLUYAKOBO/email_spam_detector/blob/main/static/images/Capture.JPG)
 
 
 ## **Table of contents**
