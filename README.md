@@ -8,13 +8,13 @@ Utilizing the scikit-learn library, this app helps users efficiently filter unwa
 
 ## **Table of contents**
 
-* Features
-* Technologies used.
-* Project structure.
-* Processes involved.
-* How to use.
-* Future improvements.
-* Licenses.
+- [Features](#features)
+- [Technologies used](#technologies-used)
+- [Project structure](#project-structure)
+- [Processes involved](#processes-involved)
+- [How to use](#how-to-use)
+- [Future improvements](#future-improvements)
+- [License](#license)
 
 ## **Features**
 
