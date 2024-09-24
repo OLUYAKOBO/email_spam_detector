@@ -72,7 +72,7 @@ Users can open the application in their web browser, paste the email content int
 * Allowing users to train the model on their own datasets for customized spam detection.
 
 
-**License**
+## **License**
 This project is licensed under the MIT License.
 
 
