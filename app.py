@@ -4,7 +4,7 @@ import pickle
 
 app = Flask(__name__)
 
-#load pickled files
+#load pickle files
 model = pickle.load(open('model.pkl','rb'))
 vectorizer = pickle.load(open('vect.pkl','rb'))
 
