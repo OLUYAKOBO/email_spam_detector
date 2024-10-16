@@ -1,6 +1,7 @@
 from flask import Flask, render_template, jsonify, request
 import numpy as np
 import pickle
+import pandas as pd
 
 app = Flask(__name__)
 
@@ -18,6 +19,20 @@ def Home():
 def predict():
     text = str(request.form['text'])
     text = [text]
+
+    df = pd.DataFrame(index=[0])
+    df['Message'] = text
+
+    #removing stop words from the mail
+    mail = ['Message']
+    for i in mail:
+        df[i] = df[i].apply(lambda x : x.replace(',', ' '))
+        df[i] = df[i].apply(lambda x: x.replace('!',''))
+        df[i] = df[i].apply(lambda x: x.replace('\r\n\r\n',' '))
+        df[i] = df[i].apply(lambda x : x.replace('.', ' '))
+        df[i] = df[i].apply(lambda x: x.replace('?',' '))
+        df[i] = df[i].apply(lambda x: x.replace('/',' '))
+
     feature = vectorizer.transform(text)
 
     prediction = model.predict(feature)[0]
